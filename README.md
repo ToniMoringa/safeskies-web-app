@@ -18,7 +18,7 @@
 - React + Hooks (`useState`, `useEffect`)
 - CSS Modules + Global Styling
 - Axios & Fetch API
-- Socket.IO Client (ready for real-time push)
+- Socket.IO Client 
 - NASA EONET API & OpenStreetMap/Nominatim
 - Leaflet (via map overrides)
 
