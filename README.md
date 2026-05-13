@@ -1,17 +1,17 @@
 # safeskies-web-app
 
-Real-time disaster alert &amp; safety monitoring dashboard. Aggregates NASA EONET events, local incident reports, and interactive mapping .
+❁Real-time disaster alert &amp; safety monitoring dashboard. Aggregates NASA EONET events, local incident reports, and interactive mapping .
 
-![SafeSkies Dashboard](assets/icons/dashboard.png)
+![SafeSkies Dashboard](assets/dashboard.png)
 
 ## ﾟ𐦍༘⋆ Key Features
 
-- ❁ **Live NASA EONET Alerts** with intelligent timeout & local fallback
-- ❁ **Interactive Map View** with zone tracking, city search & smooth fly-to navigation
-- ❁ **Real-Time Incident Feed** (traffic, accidents, weather, fires)
-- ❁ **Smart Notification System** with unread tracking & one-tap resolution
-- ❁ **Online/Offline Detection** with `localStorage` caching for uninterrupted access
-- ❁ **Responsive Dashboard** with QR onboarding & help modals
+- **Live NASA EONET Alerts** with intelligent timeout & local fallback
+- **Interactive Map View** with zone tracking, city search & smooth fly-to navigation
+- **Real-Time Incident Feed** (traffic, accidents, weather, fires)
+- **Smart Notification System** with unread tracking & one-tap resolution
+- **Online/Offline Detection** with `localStorage` caching for uninterrupted access
+- **Responsive Dashboard** with QR onboarding & help modals
 
 ## ﾟ𐦍༘⋆ Tech Stack
 
