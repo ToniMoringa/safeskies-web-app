@@ -50,7 +50,7 @@ const fetchRealAlerts = async () => {
     });
   } catch (error) {
     console.log('Using fast local alerts');
-    // FAST FALLBACK - no waiting
+    //  FALLBACK 
     return [
       {
         id: '1',
@@ -212,14 +212,14 @@ function App() {
       setNotificationCount(alerts.length - lastViewedCount);
   }, [alerts, lastViewedCount]);
 
-  // FAST SEARCH - direct and immediate
+  // FAST SEARCH 
   const handleSearch = async (searchTerm) => {
     if (!searchTerm || searchTerm.trim() === '') return;
 
     const term = searchTerm.toLowerCase().trim();
     console.log(`🔍 Searching: ${term}`);
 
-    // Check quick cities first (instant)
+    // Check quick cities first 
     if (QUICK_CITIES[term]) {
       const city = QUICK_CITIES[term];
       if (window.mapInstance) {
@@ -229,7 +229,7 @@ function App() {
       return;
     }
 
-    // Try API search (1 second)
+    // Try API search 
     const result = await searchCityAPI(searchTerm);
     if (result && window.mapInstance) {
       window.mapInstance.flyTo([result.lat, result.lon], 10);
