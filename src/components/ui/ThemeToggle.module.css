@@ -1,0 +1,18 @@
+.toggle {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  color: var(--text-primary);
+}
+
+.toggle:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}

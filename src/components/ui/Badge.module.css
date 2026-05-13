@@ -1,0 +1,33 @@
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.critical {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--critical);
+}
+
+.high {
+  background: rgba(249, 115, 22, 0.2);
+  color: var(--high);
+}
+
+.medium {
+  background: rgba(234, 179, 8, 0.2);
+  color: var(--medium);
+}
+
+.low {
+  background: rgba(34, 197, 94, 0.2);
+  color: var(--low);
+}
+
+.default {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+}

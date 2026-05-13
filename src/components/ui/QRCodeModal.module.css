@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.qrContainer {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  display: inline-block;
+}
+
+.instructions {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.storeButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.storeLink {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.storeLink:hover {
+  transform: scale(1.05);
+}
+
+.storeBadge {
+  height: 50px;
+  width: auto;
+}

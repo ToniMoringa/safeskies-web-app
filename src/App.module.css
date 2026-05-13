@@ -1,0 +1,55 @@
+.dashboard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainGrid {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+  min-height: 0;
+}
+
+.mapSection {
+  flex: 2;
+  min-width: 0;
+}
+
+.panelsSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.panel {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid {
+    flex-direction: column;
+  }
+
+  .mapSection {
+    min-height: 400px;
+  }
+
+  .panelsSection {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mapSection {
+    min-height: 300px;
+  }
+}

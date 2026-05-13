@@ -1,0 +1,98 @@
+.alertList {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.alertItem {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  transition: var(--transition);
+}
+
+.alertItem.critical {
+  border-left: 3px solid var(--critical);
+}
+
+.alertItem.high {
+  border-left: 3px solid var(--high);
+}
+
+.alertItem.medium {
+  border-left: 3px solid var(--medium);
+}
+
+.alertItem.low {
+  border-left: 3px solid var(--low);
+}
+
+.alertHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.alertId {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.alertMessage {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.alertFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.alertActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .alertFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .alertActions {
+    width: 100%;
+  }
+
+  .alertActions button {
+    flex: 1;
+  }
+}

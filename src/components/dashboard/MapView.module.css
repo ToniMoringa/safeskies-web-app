@@ -1,0 +1,56 @@
+.mapContainer {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  height: 100%;
+  min-height: 400px;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.mapControls {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.controlBtn {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  color: var(--text-primary);
+  width: 36px;
+  height: 36px;
+}
+
+.controlBtn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .mapContainer {
+    min-height: 300px;
+  }
+
+  .controlBtn {
+    width: 32px;
+    height: 32px;
+  }
+}
